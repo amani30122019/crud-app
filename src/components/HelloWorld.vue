@@ -2,14 +2,14 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div
-      class="btn btn-warning"
+      class="btn-text-color btn btn-warning"
       @click="toast"
-    ><i class="fa fa-user"></i>amani</div>
+    ><i class="fa fa-user"></i>User</div>
 
     <div
-      class="btn btn-danger"
+      class="btn-text-color btn btn-danger"
       @click="command"
-    ><i class="fa fa-save"></i>Console</div>
+    ><i class="fa fa-floppy-disk"></i>Console</div>
 
   </div>
 </template>
@@ -47,10 +47,17 @@ li {
 a {
   color: #42b983;
 }
-.fa-user {
-  color: rgb(211, 226, 211);
+.fa {
+  color: rgb(22, 211, 22);
   size: 32px;
   padding: 5px;
   margin: 3px;
+}
+.btn {
+  margin: 5px;
+}
+.btn-text-color {
+  color: rgb(12, 12, 12);
+  cursor: pointer;
 }
 </style>
