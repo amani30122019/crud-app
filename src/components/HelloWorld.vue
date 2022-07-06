@@ -2,9 +2,15 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div
-      class="btn btn-success"
+      class="btn btn-warning"
       @click="toast"
     ><i class="fa fa-user"></i>amani</div>
+
+  </div>
+  <div
+      class="btn btn-danger"
+      @click="command"
+    ><i class="fa fa-save"></i>Console</div>
 
   </div>
 </template>
@@ -19,6 +25,8 @@ export default {
     toast() {
       alert("You have clicked this");
     },
+    command(){
+    console.log("This Console Log,You are welcome SIR")
   },
 };
 </script>
