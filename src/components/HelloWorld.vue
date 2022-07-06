@@ -10,7 +10,7 @@
   <div
       class="btn btn-danger"
       @click="command"
-    ><i class="fa fa-save"></i>Console</div>
+    ><i class="fa fa-file"></i>Console</div>
 
   </div>
 </template>
